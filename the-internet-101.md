@@ -53,9 +53,9 @@ By adding `:8080`, `8080` being the port number, right after the host, we are te
 
 ## I.P Addresses
 
-
-
 ## DNS & Domain Names
+
+## HTTP, HTTPS and Other Protocols
 
 
 
