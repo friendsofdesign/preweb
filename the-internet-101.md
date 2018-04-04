@@ -51,3 +51,11 @@ http://google.com:8080
 
 By adding `:8080`, `8080` being the port number, right after the host, we are telling the web browser to expect the web service to be listening on port `8080`.
 
+## I.P Addresses
+
+
+
+## DNS & Domain Names
+
+
+
