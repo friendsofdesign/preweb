@@ -22,3 +22,19 @@ Pull Requests, for example, are a major part of Agile Development. When it comes
 
 [https://github.com/rails/rails/pull/32403](https://github.com/rails/rails/pull/32403)
 
+Beyond GitHub there are many other developer frameworks for documentation and even entire websites that can be created using Markdown. There are also many editors for Markdown that allow you to preview while you type to make the process a little easier, especially if you're never to Markdown, not to mention packages/extensions for almost every IDE/Code Editor. 
+
+Mou is one of the most popular editors for MacOS:
+
+![](/assets/Screen Shot 2018-04-09 at 11.53.02.png)http://25.io/mou/
+
+The Ghost blogging platform allows you to write entirely in Markdown:
+
+![](/assets/Screen Shot 2018-04-06 at 12.41.05.png)https://ghost.org/
+
+## Using Markdown
+
+Markdown is so expensively used on the internet that many, many tutorials and dedicated websites exist. The most complete being [How to Write Faster, Better & Longer: The Ultimate Guide to Markdown](https://blog.ghost.org/markdown/)
+
+
+
