@@ -1,6 +1,6 @@
 # Writing with Markdown
 
-While you may be unfamiliar with the name, Markdown is widely used by developers and applications all over the internet. WhatsApp, for example:
+While you may be unfamiliar with the name, but Markdown is widely used by developers and applications all over the internet and may actually be familiar with what it does. WhatsApp, for example:
 
 ![](/assets/wa-formatting.jpg)
 
@@ -10,7 +10,7 @@ Markdown allows us to create and edit rich documents, like the ones you'd normal
 
 ![](/assets/Post-Newsletter-Systems-Sub-Microsoft-Word-Tips.jpg)
 
-http://getsystems.net/microsoft-word-tips/
+[http://getsystems.net/microsoft-word-tips/](http://getsystems.net/microsoft-word-tips/)
 
 ## Why?
 
@@ -20,9 +20,5 @@ Pull Requests, for example, are a major part of Agile Development. When it comes
 
 ![](/assets/Screen Shot 2018-04-09 at 11.14.37.png)
 
-https://github.com/rails/rails/pull/32403
-
-
-
-
+[https://github.com/rails/rails/pull/32403](https://github.com/rails/rails/pull/32403)
 
