@@ -50,7 +50,21 @@ Using the CLI \(Command Line Interface\), we will have to create the folder firs
 
 In GitHub Desktop you will be presented with a repository "status" screen. This screen will update automatically with any changes you make to any file within the repository:
 
-![](/assets/Screen Shot 2018-04-16 at 14.24.28.png) 
+![](/assets/Screen Shot 2018-04-16 at 14.24.28.png)This screen, as you will see shortly, is a combination of the CLI commands `git status` and `git diff`
 
+![](/assets/Screen Shot 2018-04-16 at 14.33.53.png)Because the repository/folder is currently empty, both GitHub Desktop and the CLI will show no changes.
 
+A best practice for projects, of any kind, is to create a README file. This file will contain information about your project and. if needed, instructions on how to use it or set it up. Other important information that projects need to have such as the license and contributors can also be included in this file.
+
+Once this file has been created, you will be able to see changes ready to saved into a revision:
+
+![](/assets/Screen Shot 2018-04-16 at 14.45.26.png)GitHub Desktop takes away some of the addition steps required to add a new file into the repository. The CLI, however, is more explicit. It requires you to specify that you want to track a new file. Adding the file to be tracked is how Git knows to save all changes to this file as revisions.
+
+![](/assets/Screen Shot 2018-04-16 at 14.45.42.png)
+
+Before we will be able to see the diff from the CLI, we will need to track the file. This can be done on a per file basis by using `git add PATH/TO/FILE` or to quickly add all untracked files `git add .` The `.` here represents the current directory.
+
+![](/assets/Screen Shot 2018-04-16 at 14.55.06.png)Now the diff, like in GitHub Desktop, becomes available using the `git diff --staged`
+
+![](/assets/Screen Shot 2018-04-16 at 14.57.50.png)
 
