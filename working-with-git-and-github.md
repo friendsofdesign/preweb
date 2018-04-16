@@ -34,9 +34,23 @@ Git is a command line application. This means that without an interface like the
 
 It is also very important to note that services like GitHub, BitBucket, GitLab etc are **not** required to use Git, but are recommended. These services are essentially the Git Servers that enable the remote \(distributed\) features of Git. If you are just using Git for revisions, then servers are not required.
 
-
-
 ## Working with Git
+
+To start using Git, it needs a folder to create a repository in. A repository is where all your files and information regarding the repository will be kept. The all this information is stored in a hidden `.git` folder. This folder should never be removed unless you really want to delete the revision history.
+
+The process of creating a repository is called initialising. This can be done in an empty folder or a folder with existing files. No pre-existing files will be removed or modified.
+
+In GitHub Desktop we can initialise a new repository by using the "Create a New Repository" button and filling in the repository's name. This will automatically create the folder, with the same name as the repository, and initialise a new Git repository.
+
+![](/assets/Screen Shot 2018-04-16 at 14.26.25.png)
+
+Using the CLI \(Command Line Interface\), we will have to create the folder first, go into it and then initialise the repository using the `git init` command:
+
+![](/assets/Screen Shot 2018-04-16 at 14.25.11.png)
+
+In GitHub Desktop you will be presented with a repository "status" screen. This screen will update automatically with any changes you make to any file within the repository:
+
+![](/assets/Screen Shot 2018-04-16 at 14.24.28.png) 
 
 
 
