@@ -78,7 +78,7 @@ In GitHub Desktop, this will apply to the "Summary" field, which should be a hig
 
 ![](/assets/Screen Shot 2018-04-16 at 15.38.07.png)...and from the CLI by using the `git log` command:
 
-![](/assets/Screen Shot 2018-04-16 at 15.39.29.png)
+## ![](/assets/Screen Shot 2018-04-16 at 15.39.29.png)Working with branches
 
 
 
