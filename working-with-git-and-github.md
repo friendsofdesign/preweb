@@ -24,3 +24,7 @@ When a file is just edited, the diff will contain a list a reference to all char
 
 ![](/assets/Screen Shot 2018-04-16 at 11.49.32.png)
 
+The major advantage of Git being a Distributed Revision Control System is that these revisions don't just exist on the editors device, but on all editors devices in the for of a repository. In addition to this "backup" also comes the security of not being able to overwrite someone else's changes. Git will determine what changes to overwrite and what to keep from a previous version. IF it cannot automatically fix these conflicts, it will prompt you to do so.
+
+
+
