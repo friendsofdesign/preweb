@@ -34,7 +34,7 @@ Git is a command line application. This means that without an interface like the
 
 It is also very important to note that services like GitHub, BitBucket, GitLab etc are **not** required to use Git, but are recommended. These services are essentially the Git Servers that enable the remote \(distributed\) features of Git. If you are just using Git for revisions, then servers are not required.
 
-## Working with Git
+## Creating revisions
 
 To start using Git, it needs a folder to create a repository in. A repository is where all your files and information regarding the repository will be kept. The all this information is stored in a hidden `.git` folder. This folder should never be removed unless you really want to delete the revision history.
 
@@ -62,9 +62,23 @@ Once this file has been created, you will be able to see changes ready to saved 
 
 ![](/assets/Screen Shot 2018-04-16 at 14.45.42.png)
 
-Before we will be able to see the diff from the CLI, we will need to track the file. This can be done on a per file basis by using `git add PATH/TO/FILE` or to quickly add all untracked files `git add .` The `.` here represents the current directory.
+Before we will be able to see the diff from the CLI, we will need to track the file. This can be done on a per file basis by using `git add PATH/TO/FILE` or to quickly add all untracked files `git add .` The `.` here represents the current directory. Adding the entire directory might now be ideal though because the `git add` command also adds changes to the stage. Staging changes is selecting which changes in which files you are going to commit to this revision. If you have made changes to many files, you may not want to commit them all at once because they are unrelated changes. In GitHub Desktop, staging change done by using the checkboxes next the the file name.
 
 ![](/assets/Screen Shot 2018-04-16 at 14.55.06.png)Now the diff, like in GitHub Desktop, becomes available using the `git diff --staged`
 
-![](/assets/Screen Shot 2018-04-16 at 14.57.50.png)
+![](/assets/Screen Shot 2018-04-16 at 14.57.50.png)Committing the changes now saves the revision. Adding a message to the commit gives you the ability to describe the change and/or the reasons behind it. This is very useful for tracking changes. There is a best practise for this called the [50/72](https://medium.com/@preslavrachev/what-s-with-the-50-72-rule-8a906f61f09c) rule.
+
+In GitHub Desktop, this will apply to the "Summary" field, which should be a high level description of the change limited to 50 characters and then, if needed, a more in depth description in the "Description" field, limited to 72 characters.
+
+![](/assets/Screen Shot 2018-04-16 at 15.29.15.png)When using the CLI, you can run `git commit` which will bring up the text editor where you can add your "Summary" and "Description". In the command line a new line will separate the summary from the description, but it is best practise to include a blank line between them.
+
+![](/assets/Screen Shot 2018-04-16 at 15.30.07.png)You can also commit with your message inline using the `-m` switch and then using the `\n` to indicate new lines
+
+![](/assets/Screen Shot 2018-04-16 at 15.32.57.png)Once you have committed to master, more on this later, your stage will be cleared for new changes and a revision created. In GitHub Desktop your revisions can be seen in the "History" tab:
+
+![](/assets/Screen Shot 2018-04-16 at 15.38.07.png)...and from the CLI by using the `git log` command:
+
+![](/assets/Screen Shot 2018-04-16 at 15.39.29.png)
+
+
 
