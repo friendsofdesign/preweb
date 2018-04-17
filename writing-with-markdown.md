@@ -35,4 +35,3 @@ The Ghost blogging platform allows you to write entirely in Markdown:
 ## Using Markdown
 
 Markdown is so expensively used on the internet that many, many tutorials and dedicated websites exist. The most complete being [How to Write Faster, Better & Longer: The Ultimate Guide to Markdown](https://blog.ghost.org/markdown/)
-
