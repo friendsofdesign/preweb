@@ -1,6 +1,6 @@
 # Writing with Markdown
 
-While you may be unfamiliar with the name, but Markdown is widely used by developers and applications all over the internet and may actually be familiar with what it does. WhatsApp, for example:
+While you may be unfamiliar with the name, Markdown is widely used by developers and applications all over the internet and may actually be familiar with what it does. WhatsApp, for example:
 
 ![](/assets/wa-formatting.jpg)
 

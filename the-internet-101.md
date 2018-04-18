@@ -40,7 +40,7 @@ This very simple URL contains the only two parts of the URL syntax that are requ
 
 ## Network Services & Ports 
 
-<!--NOTE: This section feels like I've been given pieces of the puzzle, but not the whole picture.Perhaps add diagrams with the analogy elements and actual elements labelled so that it's clearer?-->
+<!--NOTE: This section feels like I've been given pieces of the puzzle, but not the whole picture.Perhaps add diagrams with the analogy elements and actual elements labelled so that it's clearer? -->
 
 The website we are visiting lives on a server and because this server's sole purpose is to serve your website to the world, it is classified as a service. Services are strictly defined by what they do, so a service that is made for serving websites cannot deliver your email to you, it wasn't made for that. <!--(NOTE: In other words, each service plays one, specific role)--> However, to the outside world, we might try to identify the services by what port <!--(NOTE: Do you need to explain what a port is first? Given this context?)--> it is listening on. An email service might listen on the default port that a web service normally listens on and we could mistake it for a website. Upon asking it for a website though, it will won't be able to reply correctly. <!--NOTE: Might need an analogy here to make clearer. Like it's phoning on the wrong line? Like trying to send an email through a fax machine?-->
 
