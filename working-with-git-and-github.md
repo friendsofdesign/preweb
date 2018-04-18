@@ -4,15 +4,15 @@
 
 [https://www.atlassian.com/git/tutorials/what-is-git](https://www.atlassian.com/git/tutorials/what-is-git)
 
-While the above link can give an excellent technical explanation about performance and security, as students it may not seem helpful at all. However, it will be a great read once the terminology is broken down.
+While the above link can give an excellent technical explanation about performance and security, as students, it may not seem helpful at all. It will, however, be a great read once the terminology is broken down. <!--NOTE: Perhaps mention to them that there is a glossery at the end that they can refer to at any stage.-->
 
-Git is a Revision Control, although it can be referred to as Version Control sometimes. Like with Markdown, you may not have heard of this before, but you have probably seen it in action. Dropbox, for example, has a feature that allows you to list all the previous changes on a file, this is Revision Control.
+Git is a Revision Control <!--NOTE: "system"?-->, although it is sometimes also referred to as Version Control. <!--NOTE: This means...-->Like with Markdown, you may not have heard of this before, but you have probably seen it in action. Dropbox, for example, has a feature that allows you to list all the previous changes on a file, this is Revision Control.
 
-Revision Control quite simply just takes the previous version of a file and the new version, compares them, figures out what has been changed and then saves just the changes as a revision. This is done by saving, mainly, just three things: What's been added, what's been removed and what's been modified.
+Revision Control quite simply just takes the previous version of a file and the new version, compares them, figures out what has been changed and then saves just the changes as a revision. This is done by saving, mainly, just three things: What's been added, what's been removed and what's been modified. <!--NOTE: Why is this useful? Perhaps explain.-->
 
 To do this, Git uses a tool called Diff \(short for difference\). There are many standalone Diff tools available, but the following examples have been taken using [Diff Checker](https://www.diffchecker.com/diff), an online Diff tool.
 
-When a new file is created in Git, it is basically just a diff of all additions:
+When a new file is created in Git, it is basically just a diff <!--NOTE: suggest: "just a diff (a record) of..."--> of all additions:
 
 ![](./assets/Screen Shot 2018-04-16 at 11.47.29.png)
 
@@ -24,27 +24,27 @@ When a file is just edited, the diff will contain a list a reference to all char
 
 ![](./assets/Screen Shot 2018-04-16 at 11.49.32.png)
 
-The major advantage of Git being a Distributed Revision Control System is that these revisions don't just exist on the editors device, but on all editors devices in the for of a repository. In addition to this "backup" also comes the security of not being able to overwrite someone else's changes. Git will determine what changes to overwrite and what to keep from a previous version. IF it cannot automatically fix these conflicts, it will prompt you to do so.
+The major advantage of Git being a Distributed Revision Control System is that these revisions don't just exist on the computer or device of the person editing the file, but on **all** editors' devices in the form of a repository. In addition to this "backup", comes the security of not being able to overwrite someone else's changes <!--NOTE: suggest adding: "because Git will record all changes from all editors without overwriting the entire document."-->. Git will determine what changes to overwrite and what to keep from a previous version. IF it cannot automatically fix these conflicts, it will prompt you to do so.
 
 ## Git is not GitHub
 
-It is very important to know that, as the title suggests, Git and GitHub are entirely too separate things. Git is a program that runs on a devices \(your laptop or on a server\) while GitHub is a SaaS \(Software as a Service\) that uses Git to create a social code sharing web application. While the confusion may not come in by simply looking at GitHub, it does when we start to use the GitHub Desktop Client. Even though this application is named GitHub, it is actually just an interface for Git.
+It is very important to know that, as the title suggests, Git and GitHub are two entirely separate things. Git is a program that runs on a devices \(your laptop or on a server\) while GitHub is a SaaS \(Software as a Service\) that uses Git to create a social code sharing web application. <!--NOTE: Try to write "social code sharing web application" in an even more colloquial way.-->  While the confusion may not come in by simply looking at GitHub, it does when we start to use the GitHub Desktop Client. Even though this application is named GitHub, it is actually just an interface for Git. <!--NOTE: perhaps break this down in bullet form? eg:Git: a programme, GitHub: A place to store and share..., GitHub Desktop Client: blah blah-->
 
-Git is a command line application. This means that without an interface like the GitHub Desktop application, you would need to be very comfortable using the command line. Going forward, each example will be presented in both the command line and using the GitHub Desktop application.
+Git is a command line application. <!--NOTE: Explain command line--> This means that without an interface like the GitHub Desktop application, you would need to be very comfortable using the command line. Going forward, each example will be presented in both the command line and using the GitHub Desktop application.
 
 It is also very important to note that services like GitHub, BitBucket, GitLab etc are **not** required to use Git, but are recommended. These services are essentially the Git Servers that enable the remote \(distributed\) features of Git. If you are just using Git for revisions, then servers are not required.
 
 ## Creating revisions
 
-To start using Git, it needs a folder to create a repository in. A repository is where all your files and information regarding the repository will be kept. The all this information is stored in a hidden `.git` folder. This folder should never be removed unless you really want to delete the revision history.
+To start using Git, it <!--NOTE: "it?" what is "it?" a file? a language? The repository is a folder itself?--> needs a folder to create a "repository" in. <!--NOTE: The definition of repository is literally "a store, or storehouse"--> A repository is where all your files and information regarding the repository will be kept. The all this information is stored in a hidden `.git` folder. This folder should never be removed unless you really want to delete the revision history.
 
-The process of creating a repository is called initialising. This can be done in an empty folder or a folder with existing files. No pre-existing files will be removed or modified.
+The process of creating a repository is called "initialising". This can be done in an empty folder or a folder with existing files. No pre-existing files will be removed or modified.
 
 In GitHub Desktop we can initialise a new repository by using the "Create a New Repository" button and filling in the repository's name. This will automatically create the folder, with the same name as the repository, and initialise a new Git repository.
 
 ![](./assets/Screen Shot 2018-04-16 at 14.26.25.png)
 
-Using the CLI \(Command Line Interface\), we will have to create the folder first, go into it and then initialise the repository using the `git init` command:
+<!--NOTE: Alternatively,--> using the CLI \(Command Line Interface\), we will have to create the folder first, go into it and then initialise the repository using the `git init` command:
 
 ![](./assets/Screen Shot 2018-04-16 at 14.25.11.png)
 
@@ -60,7 +60,7 @@ Because the repository/folder is currently empty, both GitHub Desktop and the CL
 
 A best practice for projects, of any kind, is to create a README file. This file will contain information about your project and. if needed, instructions on how to use it or set it up. Other important information that projects need to have such as the license and contributors can also be included in this file.
 
-Once this file has been created, you will be able to see changes ready to saved into a revision:
+Once this file has been created, you will be able to see changes ready to saved into a revision: <!--NOTE: Suggest adding: (Note that the README.md file has been created using Markdown)-->
 
 ![](./assets/Screen Shot 2018-04-16 at 14.45.26.png)
 
@@ -90,7 +90,7 @@ You can also commit with your message inline using the `-m` switch and then usin
 
 ![](./assets/Screen Shot 2018-04-16 at 15.32.57.png)
 
-Once you have committed to master, more on this later, your stage will be cleared for new changes and a revision created. In GitHub Desktop your revisions can be seen in the "History" tab:
+Once you have committed to master, (which will be explained in greater detail later), your stage will be cleared for new changes and a revision created. Not to worry though, in GitHub Desktop your revisions can still be seen in the "History" tab:
 
 ![](./assets/Screen Shot 2018-04-16 at 15.38.07.png)
 
@@ -98,8 +98,8 @@ Once you have committed to master, more on this later, your stage will be cleare
 
 ![](./assets/Screen Shot 2018-04-16 at 15.39.29.png)
 
-## Working with branches
+## Working with branches <!-- NOTE: in GitHub?-->
 
-In it's most basic form, working with branches is not unlike copying all the files and folders in your project into a new folder. You might do this so that you can work on the same files without affecting the original files.
+In it's most basic form, working with branches is not unlike copying all the files and folders in your project into a new folder, and making duplicates of your work <!--on GitHub?-->. You might do this so that you can work on the same files without affecting the original files.
 
-In this scenario, the main project folder, where you copied the files from, would be your master branch. The master branch is created when a new Git repository is created. It is generally used for the most stable version of your project- The version that has been fully tested and ready to be a live website or app.
+In this scenario, the main project folder, where you copied the files from, would be your master branch. The master branch is created when a new Git repository is created. It is generally used for the most stable version of your project - the version that has been fully tested and ready to be a live website or app. <!--- NOTE: A labelled diagram might be helpful here.-->
