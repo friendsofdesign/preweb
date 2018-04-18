@@ -32,14 +32,19 @@ http://google.com
 
 This very simple URL contains the only two parts of the URL syntax that are required: the `scheme` and the `host`.
 
-* `host`: This is, more often than not, the domain name which will be explained below.
-* `scheme` : This is also referred to as the `protocol` . This is directly linked to the Network Service and often implies a default port number. More details in the section to follow.
+* `host`: This is, more often than not, the domain name which will be explained below.  
+  <!--NOTE: perhaps add (e.g.: google)-->
+* `scheme` : This is also referred to as the `protocol` . This is directly linked to the Network Service and often implies a default port number. More details in the section to follow. <!--NOTE: perhaps add (e.g.: http)-->
 
-## Network Services & Ports
+<!--NOTE: Would recommend swopping host and scheme descriptors around, as the scheme comes first in the URL.--> 
 
-The website we are visiting lives on a server and because this server's sole purpose is to serve your website to the world, it is classified as a service. Services are strictly defined by what they do, so a services that is make for serving websites cannot deliver your email to you, it wasn't made for that. However, to the outside world, we might try to identify the services by what port it is listening on. An email service might listen on the default port that a web service normally listens on and we could mistake it for a website. Upon asking it for a website though, it will won't be able to reply correctly.
+## Network Services & Ports 
 
-We, through our web browser, have pre-ordered takeout. Our GPS has taken us to the takeout place, but we need to confirm that our order is ready and collect it. Because we have made a web request, our takeout order, we know that the person we need to speak to, the service, is a cashier, a web service. So we look at the the staff's name tags and there is only one cashier, the default port number, who happily gives us our meal and we are on our way.
+<!--NOTE: This section feels like I've been given pieces of the puzzle, but not the whole picture.Perhaps add diagrams with the analogy elements and actual elements labelled so that it's clearer?-->
+
+The website we are visiting lives on a server and because this server's sole purpose is to serve your website to the world, it is classified as a service. Services are strictly defined by what they do, so a service that is made for serving websites cannot deliver your email to you, it wasn't made for that. <!--(NOTE: In other words, each service plays one, specific role)--> However, to the outside world, we might try to identify the services by what port <!--(NOTE: Do you need to explain what a port is first? Given this context?)--> it is listening on. An email service might listen on the default port that a web service normally listens on and we could mistake it for a website. Upon asking it for a website though, it will won't be able to reply correctly. <!--NOTE: Might need an analogy here to make clearer. Like it's phoning on the wrong line? Like trying to send an email through a fax machine?-->
+
+We, through our web browser, have pre-ordered takeout. Our GPS has taken us to the takeout place, but we need to confirm that our order is ready and collect it. Because we have made a web request, our takeout order, we know that the person we need to speak to, the service, is a cashier, a web service. So we look at the the staff's name tags and there is only one cashier, the default port number, who happily gives us our meal and we are on our way. <!--NOTE: This analogy isn't entirely clear.-->
 
 Default port numbers are service specific, but a service doesn't have to use these defaults. Network ports can be any number between 0 and 65535.
 
