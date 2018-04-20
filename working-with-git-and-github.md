@@ -6,7 +6,7 @@
 
 While the above link can give an excellent technical explanation about performance and security, as students, it may not seem helpful at all. It will, however, be a great read once the terminology is broken down.
 
-Git is a Revision Control System, although it is sometimes also referred to as Version Control. Revision/Version control  with Markdown, you may not have heard of this before, but you have probably seen it in action. Dropbox, for example, has a feature that allows you to list all the previous changes on a file, this is Revision Control.
+Git is a Revision Control System, although it is sometimes also referred to as Version Control. Just like with Markdown, you may not have heard of Revision/Version control before, but you have probably seen it in action. Dropbox, for example, has a feature that allows you to list all the previous changes on a file, this is Revision Control.
 
 Revision Control quite simply just takes the previous version of a file and the new version, compares them, figures out what has been changed and then saves just the changes as a revision. This is done by saving, mainly, just three things: What's been added, what's been removed and what's been modified.
 
