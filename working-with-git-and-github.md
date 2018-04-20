@@ -103,3 +103,81 @@ Once you have committed to master, more on this later, your stage will be cleare
 In it's most basic form, working with branches is not unlike copying all the files and folders in your project into a new folder. You might do this so that you can work on the same files without affecting the original files.
 
 In this scenario, the main project folder, where you copied the files from, would be your master branch. The master branch is created when a new Git repository is created. It is generally used for the most stable version of your project- The version that has been fully tested and ready to be a live website or app.
+
+When creating a new branch, you branch off of an existing branch. By default this will be master. A new branch will be an exact copy of the parent branch. All files, folders and the entire commit history will exist in the new branch. Nothing you do to the files in this new branch will affect files in any other branch.
+
+![54](./assets/Screen Shot 2018-04-20 at 11.28.54.png)
+
+From the CLI we would the command `git checkout -b licence`using `checkout`will switch the branch and if the branch needs to be created, `-b`
+
+![51](./assets/Screen Shot 2018-04-20 at 11.39.51.png)
+
+The licence is being added into a branch so that we can have the legal department verify the licence before we publish it to the live website by adding it to the master branch.
+
+![25](assets/Screen Shot 2018-04-20 at 11.36.25.png)
+
+![05](./assets/Screen Shot 2018-04-20 at 11.46.05.png)
+
+Once the licence is added and we have commited the change, development can continue on the master branch without having to wait for this change to be bew review. 
+
+![44](./assets/Screen Shot 2018-04-20 at 12.08.44.png)
+
+From the CLI, the `-b`switch is not required in `git checkout master`because master is an existing branch.
+
+![54](./assets/Screen Shot 2018-04-20 at 12.10.54.png)
+
+Once a branch is created it is independant of all other branches, even it's parent. Unlike creating a new branch, switching to an existing branch doesn't carry over any changes or commit history.
+
+![27](./assets/Screen Shot 2018-04-20 at 12.39.27.png)
+
+Bringing changes made in a different branch into the current branch is called merging. Merging branches can be done either way. You can merge changes from the parent branch into the child branch to make sure that you are always working with update-to-date code and this is concidered a must. Once the child branch is up-to-date, the child branch's changes can then be merged into the parent.
+
+![33](./assets/Screen Shot 2018-04-20 at 12.51.33.png)
+
+From the CLI the `git merge BRANCH_NAME`command will merge all changes from the branch name provided into the the current branch.
+
+![17](./assets/Screen Shot 2018-04-20 at 12.52.17.png)
+
+Once merged, all the changes made to that branch since the branch was created will be added into the current branch. The changes can then be seen as part of the commit history.
+
+![50](./assets/Screen Shot 2018-04-20 at 12.51.50.png)
+
+Git merges these changes based on the existing content and what has been changed. Sometimes there can be conficting changes though. For the most part, Git handles these based on when the branch was created relative to the changes in the parent's branch. There are however times where Git cannot automatically resolve these conflicts.
+
+![50](./assets/Screen Shot 2018-04-20 at 13.17.50.png)
+
+![55](./assets/Screen Shot 2018-04-20 at 13.17.55.png)
+
+When a conflict does happen, Git will show both the current branch's code and the changes that have tried to be merged. These blocks will show up in file where the conflict has happened.
+
+![57](./assets/Screen Shot 2018-04-20 at 13.18.57.png)
+
+The conflict block with start with
+
+```
+<<<<<<< HEAD
+```
+
+The content following this will be the current branch's content. The current branch will always be marked as `HEAD`. The current branch's conflicting content will end with
+
+```
+=======
+```
+
+The content following this will be the conflicting content that is trying to be merged into the current branch. The conflicting content and the conflict block will end with `>>>>>>>`followed by the name of the branch
+
+```
+>>>>>>> licence
+```
+
+To resolve the conflict, the entire conflict block needs to be deleted, leaving just the correct content in place and the file saved.
+
+![28](./assets/Screen Shot 2018-04-20 at 13.31.28.png)
+
+A commit resolving the conflict will then be made, confirming the merging on the branch into the current branch
+
+![55](./assets/Screen Shot 2018-04-20 at 13.33.55.png)
+
+![06](./assets/Screen Shot 2018-04-20 at 13.35.06.png)
+
+
