@@ -4,15 +4,15 @@
 
 [https://www.atlassian.com/git/tutorials/what-is-git](https://www.atlassian.com/git/tutorials/what-is-git)
 
-While the above link can give an excellent technical explanation about performance and security, as students, it may not seem helpful at all. It will, however, be a great read once the terminology is broken down.
+While the above link can give an excellent technical explanation about performance and security, as students it may not seem helpful at all. However, it will be a great read once the terminology is broken down.
 
-Git is a Revision Control System, although it is sometimes also referred to as Version Control. Revision/Version control  with Markdown, you may not have heard of this before, but you have probably seen it in action. Dropbox, for example, has a feature that allows you to list all the previous changes on a file, this is Revision Control.
+Git is a Revision Control, although it can be referred to as Version Control sometimes. Like with Markdown, you may not have heard of this before, but you have probably seen it in action. Dropbox, for example, has a feature that allows you to list all the previous changes on a file, this is Revision Control.
 
 Revision Control quite simply just takes the previous version of a file and the new version, compares them, figures out what has been changed and then saves just the changes as a revision. This is done by saving, mainly, just three things: What's been added, what's been removed and what's been modified.
 
 To do this, Git uses a tool called Diff \(short for difference\). There are many standalone Diff tools available, but the following examples have been taken using [Diff Checker](https://www.diffchecker.com/diff), an online Diff tool.
 
-When a new file is created in Git, it is basically just a diff of all additions since there is nothing to change or remove:
+When a new file is created in Git, it is basically just a diff of all additions:
 
 ![](./assets/Screen Shot 2018-04-16 at 11.47.29.png)
 
@@ -24,11 +24,11 @@ When a file is just edited, the diff will contain a list a reference to all char
 
 ![](./assets/Screen Shot 2018-04-16 at 11.49.32.png)
 
-The major advantage of Git being a Distributed Revision Control System is that these revisions don't just exist on the computer or device of the person editing the file, but on **all** editors' devices in the form of a repository. In addition to this "backup", comes the security of not being able to overwrite someone else's changes suggest adding: "because Git will record all changes from all editors without overwriting the entire document. Git will determine what changes to overwrite and what to keep from a previous version. IF it cannot automatically fix these conflicts, it will prompt you to do so.
+The major advantage of Git being a Distributed Revision Control System is that these revisions don't just exist on the editors device, but on all editors devices in the for of a repository. In addition to this "backup" also comes the security of not being able to overwrite someone else's changes. Git will determine what changes to overwrite and what to keep from a previous version. IF it cannot automatically fix these conflicts, it will prompt you to do so.
 
 ## Git is not GitHub
 
-It is very important to know that, as the title suggests, Git and GitHub are two entirely separate things. Git is a program that runs on a devices \(your laptop or on a server\) while GitHub is a SaaS \(Software as a Service\) that uses Git to create an interface to Git using a web application. While the confusion may not come in by simply looking at GitHub, it does when we start to use the GitHub Desktop Client. Even though this application is named GitHub, it is actually just an interface for Git.
+It is very important to know that, as the title suggests, Git and GitHub are entirely too separate things. Git is a program that runs on a devices \(your laptop or on a server\) while GitHub is a SaaS \(Software as a Service\) that uses Git to create a social code sharing web application. While the confusion may not come in by simply looking at GitHub, it does when we start to use the GitHub Desktop Client. Even though this application is named GitHub, it is actually just an interface for Git.
 
 Git is a command line application. This means that without an interface like the GitHub Desktop application, you would need to be very comfortable using the command line. Going forward, each example will be presented in both the command line and using the GitHub Desktop application.
 
@@ -36,15 +36,15 @@ It is also very important to note that services like GitHub, BitBucket, GitLab e
 
 ## Creating revisions
 
-To start using Git, it needs a folder to create a "repository" in. A repository is where all your files and information regarding the repository will be kept. The all this information is stored in a hidden `.git` folder. This folder should never be removed unless you really want to delete the revision history.
+To start using Git, it needs a folder to create a repository in. A repository is where all your files and information regarding the repository will be kept. The all this information is stored in a hidden `.git` folder. This folder should never be removed unless you really want to delete the revision history.
 
-The process of creating a repository is called "initialising". This can be done in an empty folder or a folder with existing files. No pre-existing files will be removed or modified.
+The process of creating a repository is called initialising. This can be done in an empty folder or a folder with existing files. No pre-existing files will be removed or modified.
 
 In GitHub Desktop we can initialise a new repository by using the "Create a New Repository" button and filling in the repository's name. This will automatically create the folder, with the same name as the repository, and initialise a new Git repository.
 
 ![](./assets/Screen Shot 2018-04-16 at 14.26.25.png)
 
-using the CLI \(Command Line Interface\), we will have to create the folder first, go into it and then initialise the repository using the `git init` command:
+Using the CLI \(Command Line Interface\), we will have to create the folder first, go into it and then initialise the repository using the `git init` command:
 
 ![](./assets/Screen Shot 2018-04-16 at 14.25.11.png)
 
@@ -58,7 +58,7 @@ This screen, as you will see shortly, is a combination of the CLI commands `git 
 
 Because the repository/folder is currently empty, both GitHub Desktop and the CLI will show no changes.
 
-A best practice for projects, of any kind, is to create a README file. This file will contain information about your project and. if needed, instructions on how to use it or set it up. Other important information that projects need to have such as the license and contributors can also be included in this file. Markdown is perfect for README files, but a plain text, `.txt`, file will work too.
+A best practice for projects, of any kind, is to create a README file. This file will contain information about your project and. if needed, instructions on how to use it or set it up. Other important information that projects need to have such as the license and contributors can also be included in this file.
 
 Once this file has been created, you will be able to see changes ready to saved into a revision:
 
@@ -90,7 +90,7 @@ You can also commit with your message inline using the `-m` switch and then usin
 
 ![](./assets/Screen Shot 2018-04-16 at 15.32.57.png)
 
-Once you have committed to master, (which will be explained in greater detail later), your stage will be cleared for new changes and a revision created. Not to worry though, in GitHub Desktop your revisions can still be seen in the "History" tab:
+Once you have committed to master, more on this later, your stage will be cleared for new changes and a revision created. In GitHub Desktop your revisions can be seen in the "History" tab:
 
 ![](./assets/Screen Shot 2018-04-16 at 15.38.07.png)
 
@@ -98,9 +98,9 @@ Once you have committed to master, (which will be explained in greater detail la
 
 ![](./assets/Screen Shot 2018-04-16 at 15.39.29.png)
 
-## Working with branches <!-- NOTE: in GitHub?-->
+## Working with branches
 
-In it's most basic form, working with branches is not unlike copying all the files and folders in your project into a new folder, and making duplicates of your work <!--on GitHub?-->. You might do this so that you can work on the same files without affecting the original files.
+In it's most basic form, working with branches is not unlike copying all the files and folders in your project into a new folder. You might do this so that you can work on the same files without affecting the original files.
 
 In this scenario, the main project folder, where you copied the files from, would be your master branch. The master branch is created when a new Git repository is created. It is generally used for the most stable version of your project- The version that has been fully tested and ready to be a live website or app.
 
@@ -179,3 +179,22 @@ A commit resolving the conflict will then be made, confirming the merging on the
 ![55](./assets/Screen Shot 2018-04-20 at 13.33.55.png)
 
 ![06](./assets/Screen Shot 2018-04-20 at 13.35.06.png)
+
+## Working with GitHub
+
+GitHub, in this case, is the Distributed part of Distributes Version Control System. Up until now, everything has been done locally with no need to to use GitHub's, or even just a Git server's, collaboration features.
+
+In the same way you would download the latest copy of your project files from your FTP folder, getting a fresh copy of the files off of a Git server is not just advisable, it is enforced by Git. If you have any commited changes, that aren't yet on the Git server, Git won't allow you to send those changes to the server if it ditermines that you are missing some other changes locally.
+
+Before Git can comminute with a server, it needs to know that one exists. When creating a new repository in GitHub, we will get a URL which Git uses to identify the Git server:
+
+![23](./assets/Screen Shot 2018-05-16 at 08.31.23.png)
+
+The URL can then simply be added to an existing repository in GitHub Desktop under the Repository Settings:
+
+![04](./assets/Screen Shot 2018-05-16 at 08.04.04.png)
+
+From the CLI adding a server is done by using the `git remote` command. Using `add` to add the server and the `-r` switch to view the server
+
+![50](./assets/Screen Shot 2018-05-16 at 08.23.50.png)
+
