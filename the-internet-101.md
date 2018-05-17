@@ -4,13 +4,13 @@ At some point in your design or development career, even if it's just on the pho
 
 The internet is not entirely unlike [Google Maps](https://maps.google.com) \(Street maps and GPS\). Just like when you type a website's address into your browser's address bar, when you search Google Maps for an address, it will, with some transportation in between, direct you there. Though it may feel like it sometimes, the website you are visiting is rarely just a click away. Like a major city's streets, the internet is a massive, complex place and going "just around the corner", may as well, and often is, on the other side of the world.
 
-![](/assets/006.jpg)[http://www.akexorcist.com/2015/12/google-direction-library-for-android-en.html](http://www.akexorcist.com/2015/12/google-direction-library-for-android-en.html)
+![](./assets/006.jpg)[http://www.akexorcist.com/2015/12/google-direction-library-for-android-en.html](http://www.akexorcist.com/2015/12/google-direction-library-for-android-en.html)
 
 Driving to our destination above, each dot represents a turn we would have to take. Between you and the website you are visiting are turns too. These turns are called "Routes" and the routing is performed by "Nodes" \(routers, servers or network services\). These nodes work a lot like stoping and asking for directions. Each person sends you a little way towards your destination until you meet another person who can direct you more and so on. Each person giving you the best or fastest route, according to them, until you have arrived at your destination.
 
 You maybe, at one of your stops, asking for directions, be told that there is a road block ahead, so take this alternative route instead. Each node knows the availability of the other nodes it's connected too, making the internet, like the city streets, very diverse. You will, more other than not, be able to get to the website you are looking for regardless of if some nodes are unavailable or down.
 
-![](/assets/new-google-maps-cycle-routes.jpg)[https://www.designedbyross.com/web-insights/new-google-maps-sneak-peek/](#)
+![](./assets/new-google-maps-cycle-routes.jpg)[https://www.designedbyross.com/web-insights/new-google-maps-sneak-peek/](#)
 
 Below is a closer look at each at some of the components of networking and the internet that make it possible for you to get from point A, your laptop, to point B, your favourite website. Each section following on the one before so by the end we should have a clear picture of what is actually happening, unseen by us, in those split seconds it takes out page to load.
 
@@ -54,6 +54,8 @@ http://google.com:8080
 By adding `:8080`, `8080` being the port number, right after the host, we are telling the web browser to expect the web service to be listening on port `8080`.
 
 ## I.P Addresses
+
+
 
 ## DNS & Domain Names
 
