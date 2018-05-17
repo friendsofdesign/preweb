@@ -55,8 +55,27 @@ By adding `:8080`, `8080` being the port number, right after the host, we are te
 
 ## I.P Addresses
 
+I.P (Internet Protocol) Address are in many ways similar to GPS coordinates. Where GPS coordinates are latitude and longitude seperated by a comma, I.P is 32-bit numeric address with each number ranging from 0 - 255.
 
+IP addresses identify very specific and unique places on the network or the internet. If we had no street names to rely on, a GPS coordinate would be how we would identify Friends of Design for example. This, however, only gets you to the building. You still would need to know which floor or office number to go to. This is how I.P addresses work with network service ports to identify services.
 
 ## DNS & Domain Names
 
-## HTTP, HTTPS and Other Protocols
+Domain names are friendly names given to I.P Adresses to make it easier to find services.
+
+Think about not having any names or pictures fir any phone number on your phone. Having to identify people to call or messaged based on the phone number alone. Your address book or contacts app here becomes your DNS (Domain Name Server) making it possible to link people's names to thier phoine number.
+
+A FQDN (Fully Qualified Domain Name) can be broken down into three main part, from right to left and equally most important: 
+
+- TLD (Top Level Domain) this would be the `com`,  `co.za`, `net` part of the domain name
+- SLD (Second Level Domain) this could generally be the actualy descriptive name like `google`, `facebook` and `friendsofdesign` for example
+- LLD (Lower Level Domain) this is often refered to as being subdomains and could be something like `www`. There can be more than one of these.
+
+Each of these are seperated by a .(dot) and could look something like these:
+
+- `SLD.TLD` / `google.com`
+- `LLD.SLD.TLD` / `www.friendsofdesign.net`
+- `LLD.LLS.SLD.TLD` / `beta.app.facebook.com`
+
+A valid domin name only requires a TLD and a SLD, shoud not be a grater than 253 chartecters or contain more than 127 levels (the combination of LLD, SLD and TDL)
+
