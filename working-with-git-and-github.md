@@ -6,7 +6,7 @@
 
 While the above link can give an excellent technical explanation about performance and security, as students it may not seem helpful at all. However, it will be a great read once the terminology is broken down.
 
-Git is a Revision Control, although it can be referred to as Version Control sometimes. Like with Markdown, you may not have heard of this before, but you have probably seen it in action. Dropbox, for example, has a feature that allows you to list all the previous changes on a file, this is Revision Control.
+Git is a Revision Control System, although it is sometimes also referred to as Version Control. Just like with Markdown, you may not have heard of Revision/Version control before, but you have probably seen it in action. Dropbox, for example, has a feature that allows you to list all the previous changes on a file, this is Revision Control.
 
 Revision Control quite simply just takes the previous version of a file and the new version, compares them, figures out what has been changed and then saves just the changes as a revision. This is done by saving, mainly, just three things: What's been added, what's been removed and what's been modified.
 
@@ -197,4 +197,3 @@ The URL can then simply be added to an existing repository in GitHub Desktop und
 From the CLI adding a server is done by using the `git remote` command. Using `add` to add the server and the `-r` switch to view the server
 
 ![50](./assets/Screen Shot 2018-05-16 at 08.23.50.png)
-
